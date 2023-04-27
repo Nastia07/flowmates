@@ -60,3 +60,27 @@ img {
 .link {
   text-decoration: none;
 }
+
+.main-btn {
+  display: block;
+  margin: 0 auto;
+  padding: 15px 58px;
+  min-width: 308px;
+  border-radius: 100px;
+  border: none;
+
+  font-family: inherit;
+  font-weight: 700;
+  line-height: 1.87;
+  letter-spacing: 0.06em;
+  text-align: center;
+  text-transform: uppercase;
+  color: var(--secondary-text-color);
+  background-color: var(--main-button-color);
+  cursor: pointer;
+}
+
+.main-btn:hover,
+.main-btn:focus {
+  background-color: var(--accent-color);
+}
