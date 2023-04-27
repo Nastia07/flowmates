@@ -1,5 +1,16 @@
 :root {
   --main-background-color: #ffffff;
+  --secondary-background-color: #181b38;
+  --input-background-color: #f3f5f8;
+  --overlay-color: rgba(21, 21, 21, 0.79);
+  --accent-color: #1f2b4d;
+  --main-button-color: #5461ff;
+  --header-button-color: #f5f5f5;
+  --main-text-color: rgba(24, 25, 26, 0.8);
+  --secondary-text-color: #ffffff;
+  --third-text-color: #181b38;
+  --accent-text-color: #5461ff;
+  --footer-text-color: rgba(255, 255, 255, 0.8);
 }
 
 * {
