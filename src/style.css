@@ -61,6 +61,18 @@ img {
   text-decoration: none;
 }
 
+.container {
+  width: 1440px;
+  padding-left: 71px;
+  padding-right: 71px;
+  margin-left: auto;
+  margin-right: auto;
+}
+.section {
+  padding-top: 150px;
+  padding-bottom: 150px;
+}
+
 .main-btn {
   display: block;
   margin: 0 auto;
