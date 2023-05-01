@@ -34,15 +34,34 @@ a {
 }
 
 button {
+  padding: 0;
+  border: none;
+  font: inherit;
+  color: inherit;
+  background-color: transparent;
   cursor: pointer;
   transition: all 0.3s ease;
 }
+
 h1 {
   font-size: 52px;
   line-height: 115%;
   font-weight: 700;
 }
+.list {
+  list-style: none;
+}
+h2 {
+  font-weight: 700;
+  font-size: 50px;
+  line-height: 115%;
+  margin-bottom: 64px;
+  text-align: center;
+}
 
+.span_title {
+  color: #5459ff;
+}
 .button {
   border: 1px solid var(--main-button-color);
   background-color: var(--main-button-color);
@@ -149,6 +168,19 @@ h1 {
 
 .header__menu_icon:hover {
 }
+.header__burger-menu.is-open {
+  display: block;
+  background-color: #f3f5f8;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 100;
+  /* display: flex;
+  flex-direction: column;
+  justify-content: space-between; */
+  width: 100vw;
+  height: 100vh;
+}
 
 /*MAIN*/
 
@@ -234,7 +266,75 @@ h1 {
   nav {
     display: none;
   }
+
   .menu {
     display: flex;
   }
+}
+@media only screen and (min-width: 769px) {
+  .header__burger-menu.is-open {
+    display: none;
+  }
+}
+/*whoIs*/
+.section {
+  width: 100vw;
+  margin: 51px auto;
+  background-color: var(--main-background-color);
+}
+
+.wrapper {
+  display: flex;
+  gap: 64px;
+  padding: 0px 90px;
+}
+
+.whoIs__ImgWrapper,
+.conference__Iframewrapper {
+  border-radius: 10px;
+  max-width: 520px;
+}
+.conference__wrapper .button {
+  width: 270px;
+}
+.wrapper__text {
+  max-width: 528px;
+}
+
+/* guest */
+.guest-back {
+  background-color: var(--main-background-color);
+  background-size: 100%;
+  background-repeat: no-repeat;
+  background-image: url(../images/desktop/back1.jpeg);
+}
+.guest {
+  background-size: contain;
+  background-position: 99%;
+
+  background-repeat: no-repeat;
+  background-image: url(../images/desktop/back2.png);
+}
+
+.conference {
+  background-size: contain;
+
+  background-repeat: no-repeat;
+  background-image: url(../images/desktop/back3.png);
+}
+.for {
+  padding: 80px 45px 106px 45px;
+}
+.for__list {
+  display: flex;
+
+  gap: 56px;
+}
+.for__item {
+  max-width: 267px;
+}
+.for__item > div {
+  display: flex;
+  gap: 19px;
+  padding-bottom: 15px;
 }
