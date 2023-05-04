@@ -263,6 +263,28 @@ img {
   width: 100vw;
   height: 100vh;
 }
+/* menu */
+@media only screen and (max-width: 768px) {
+  .menu-icon {
+    display: block;
+  }
+  nav {
+    display: none;
+  }
+
+  .menu {
+    display: flex;
+  }
+
+  .header .button-secondary {
+    display: none;
+  }
+}
+@media only screen and (min-width: 769px) {
+  .header__burger-menu.is-open {
+    display: none;
+  }
+}
 
 /*MAIN*/
 
@@ -697,26 +719,3 @@ img {
 }
 
 /* ------- */
-@media only screen and (max-width: 1140px) {
-}
-@media only screen and (max-width: 768px) {
-  .menu-icon {
-    display: block;
-  }
-  nav {
-    display: none;
-  }
-
-  .menu {
-    display: flex;
-  }
-
-  .header .button-secondary {
-    display: none;
-  }
-}
-@media only screen and (min-width: 769px) {
-  .header__burger-menu.is-open {
-    display: none;
-  }
-}
