@@ -113,8 +113,6 @@ img {
   color: var(--span-title-color);
 }
 
-
-
 .button {
   border: 1px solid var(--main-button-color);
   background-color: var(--main-button-color);
@@ -125,7 +123,6 @@ img {
   line-height: 150%;
   height: 60px;
   text-transform: uppercase;
-  
 }
 
 .button__modal {
@@ -296,22 +293,22 @@ img {
   width: 100vw;
   height: 100vh; */
   display: block;
-    background-color: #FFFFFF;
-    position: fixed;
-    top: 0;
-    z-index: 100;
-    width: 100vw;
-    height: 577px;
-    max-width: 355px;
-    flex-direction: column;
-    left: 50%;
-    padding: 22px 12px;
-    transform: translateX(-50%) scale(1);
-    box-shadow: 0px 49px 31px rgba(0, 0, 0, 0.25);
-    border-radius: 0px 0px 16px 16px;
+  background-color: #ffffff;
+  position: fixed;
+  top: 0;
+  z-index: 100;
+  width: 100vw;
+  height: 577px;
+  max-width: 355px;
+  flex-direction: column;
+  left: 50%;
+  padding: 22px 12px;
+  transform: translateX(-50%) scale(1);
+  box-shadow: 0px 49px 31px rgba(0, 0, 0, 0.25);
+  border-radius: 0px 0px 16px 16px;
 }
 
-.modal__header-wrap{
+.modal__header-wrap {
   display: flex;
   justify-content: space-between;
   align-content: center;
@@ -319,25 +316,25 @@ img {
   align-items: center;
 }
 
-.modal__menu-list{
-    margin-top: 78px;
-    display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;
-    align-content: center;
-    justify-content: center;
-    align-items: center;
-    list-style: none;
+.modal__menu-list {
+  margin-top: 78px;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  align-content: center;
+  justify-content: center;
+  align-items: center;
+  list-style: none;
 }
 
-.modal__menu-list-item{
-    font-weight: 700;
-    font-size: 20px;
-    line-height: 3.1;
+.modal__menu-list-item {
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 3.1;
 }
 
-.modal__menu-list-item:hover{
-color: #5459ff;
+.modal__menu-list-item:hover {
+  color: #5459ff;
 }
 /* menu */
 @media only screen and (max-width: 768px) {
@@ -796,7 +793,7 @@ color: #5459ff;
 
 /* ------- */
 /* form */
-.form__wrapper{
+.form__wrapper {
   padding-bottom: 64px;
   padding-top: 48px;
   padding: 48px 105px 64px 105px;
@@ -817,7 +814,7 @@ color: #5459ff;
 .form__wrapper label {
   font-weight: bold;
   display: block;
-  color: #FFFFFF;
+  color: #ffffff;
 }
 .form__wrapper div {
   display: flex;
@@ -832,82 +829,82 @@ color: #5459ff;
   margin-top: 5px;
 }
 
-.form__wrapper .form__section{
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    align-content: center;
-    justify-content: space-around;
-    align-items: center;
-  }
+.form__wrapper .form__section {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-content: center;
+  justify-content: space-around;
+  align-items: center;
+}
 
-.form__wrapper .form__label{
-    font-weight: bold;
-    display: block;
-    width: calc((100% - 80) /2);
-  }
+.form__wrapper .form__label {
+  font-weight: bold;
+  display: block;
+  width: calc((100% - 80) / 2);
+}
 
-  .form__section input::placeholder {
-    color: #202122;
-    font-size: 1.2em;
-    font-weight: 400;
-    font-size: 14px;
-  }
+.form__section input::placeholder {
+  color: #202122;
+  font-size: 1.2em;
+  font-weight: 400;
+  font-size: 14px;
+}
 
-  .email__input{
+.email__input {
   background-image: url(../images/email.svg);
   background-repeat: no-repeat;
   background-position: bottom 12px left 6px;
   background-size: 18px;
 }
 
-.user__input{
+.user__input {
   background-image: url(../images/user.svg);
   background-repeat: no-repeat;
   background-position: bottom 12px left 6px;
   background-size: 18px;
 }
 
-.company__input{
+.company__input {
   background-image: url(../images/company.svg);
   background-repeat: no-repeat;
   background-position: bottom 10px left 6px;
   background-size: 18px;
 }
 
-.position__input{
+.position__input {
   background-image: url(../images/position.svg);
   background-repeat: no-repeat;
   background-position: bottom 12px left 6px;
   background-size: 18px;
 }
 
-.btn__modal{
+.btn__modal {
   margin-top: 48px;
   padding: 10px 106px;
 }
 
-.btn_form{
+.btn_form {
   padding: 10px 106px;
-
+  margin-bottom: 10px;
 }
 
-  @media only screen and (max-width: 768px) {
-    .form__wrapper .form__section{
-      display: flex;
-      flex-direction: column;
-      flex-wrap: wrap;
-      align-content: center;
-      justify-content: space-around;
-      align-items: center;
-    }
-  
-  .form__wrapper .form__label{
-      font-weight: bold;
-      display: block;
-      width: 327px;
-    }
+@media only screen and (max-width: 768px) {
+  .form__wrapper .form__section {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-content: center;
+    justify-content: space-around;
+    align-items: center;
   }
+
+  .form__wrapper .form__label {
+    font-weight: bold;
+    display: block;
+    width: 327px;
+  }
+}
 
 .backdrop {
   position: fixed;
@@ -936,7 +933,6 @@ color: #5459ff;
   transition: transform var(--time) var(--cubic);
 }
 
-/* CSS */
 .modal {
   left: 50%;
   top: 50%;
@@ -951,6 +947,19 @@ color: #5459ff;
   background: #181b38;
   border-radius: 20px;
 }
+/* CSS */
+@media only screen and (max-width: 768px) {
+  .modal {
+    width: 355px;
+    height: 636px;
+  }
+  .form__wrapper {
+    padding-bottom: 64px;
+    padding-top: 48px;
+    padding: 48px 5px 64px 5px;
+  }
+}
+
 
 .modal-content {
   background-color: #fefefe;
