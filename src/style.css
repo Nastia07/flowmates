@@ -64,7 +64,7 @@ h2 {
   font-weight: 700;
   font-size: 50px;
   line-height: 115%;
-  margin-bottom: 64px;
+  margin-bottom: 11px;
   text-align: center;
 }
 h3 {
@@ -113,6 +113,8 @@ img {
   color: var(--span-title-color);
 }
 
+
+
 .button {
   border: 1px solid var(--main-button-color);
   background-color: var(--main-button-color);
@@ -123,6 +125,21 @@ img {
   line-height: 150%;
   height: 60px;
   text-transform: uppercase;
+  
+}
+
+.button__modal {
+  border: 1px solid var(--main-button-color);
+  background-color: var(--main-background-color);
+  border-radius: 100px;
+  color: var(--main-button-color);
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 150%;
+  height: 60px;
+  text-transform: uppercase;
+  width: 308px;
+  margin: 65px 13px 0 13px;
 }
 
 .button:hover {
@@ -264,14 +281,57 @@ img {
 }
 
 .header__burger-menu.is-open {
-  display: block;
+  /* display: block;
   background-color: #f3f5f8;
   position: fixed;
   top: 0;
   left: 0;
   z-index: 100;
   width: 100vw;
-  height: 100vh;
+  height: 100vh; */
+  display: block;
+    background-color: #FFFFFF;
+    position: fixed;
+    top: 0;
+    z-index: 100;
+    width: 100vw;
+    height: 577px;
+    max-width: 355px;
+    flex-direction: column;
+    left: 50%;
+    padding: 22px 12px;
+    transform: translateX(-50%) scale(1);
+    box-shadow: 0px 49px 31px rgba(0, 0, 0, 0.25);
+    border-radius: 0px 0px 16px 16px;
+}
+
+.modal__header-wrap{
+  display: flex;
+  justify-content: space-between;
+  align-content: center;
+  flex-wrap: nowrap;
+  align-items: center;
+}
+
+.modal__menu-list{
+    margin-top: 78px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+    list-style: none;
+}
+
+.modal__menu-list-item{
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 3.1;
+}
+
+.modal__menu-list-item:hover{
+color: #5459ff;
 }
 /* menu */
 @media only screen and (max-width: 768px) {
@@ -730,6 +790,11 @@ img {
 
 /* ------- */
 /* form */
+.form__wrapper{
+  padding-bottom: 64px;
+  padding-top: 48px;
+  padding: 48px 105px 64px 105px;
+}
 
 .form__wrapper div {
   display: flex;
@@ -746,19 +811,97 @@ img {
 .form__wrapper label {
   font-weight: bold;
   display: block;
+  color: #FFFFFF;
 }
 .form__wrapper div {
   display: flex;
   flex-direction: column;
 }
 .form__wrapper input {
-  padding: 10px;
+  padding: 10px 7px 10px 31px;
   border: 1px solid #ccc;
   border-radius: 5px;
   width: 100%;
   box-sizing: border-box;
   margin-top: 5px;
 }
+
+.form__wrapper .form__section{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-content: center;
+    justify-content: space-around;
+    align-items: center;
+  }
+
+.form__wrapper .form__label{
+    font-weight: bold;
+    display: block;
+    width: calc((100% - 80) /2);
+  }
+
+  .form__section input::placeholder {
+    color: #202122;
+    font-size: 1.2em;
+    font-weight: 400;
+    font-size: 14px;
+  }
+
+  .email__input{
+  background-image: url(../images/email.svg);
+  background-repeat: no-repeat;
+  background-position: bottom 12px left 6px;
+  background-size: 18px;
+}
+
+.user__input{
+  background-image: url(../images/user.svg);
+  background-repeat: no-repeat;
+  background-position: bottom 12px left 6px;
+  background-size: 18px;
+}
+
+.company__input{
+  background-image: url(../images/company.svg);
+  background-repeat: no-repeat;
+  background-position: bottom 10px left 6px;
+  background-size: 18px;
+}
+
+.position__input{
+  background-image: url(../images/position.svg);
+  background-repeat: no-repeat;
+  background-position: bottom 12px left 6px;
+  background-size: 18px;
+}
+
+.btn__modal{
+  margin-top: 48px;
+  padding: 10px 106px;
+}
+
+.btn_form{
+  padding: 10px 106px;
+
+}
+
+  @media only screen and (max-width: 768px) {
+    .form__wrapper .form__section{
+      display: flex;
+      flex-direction: column;
+      flex-wrap: wrap;
+      align-content: center;
+      justify-content: space-around;
+      align-items: center;
+    }
+  
+  .form__wrapper .form__label{
+      font-weight: bold;
+      display: block;
+      width: 327px;
+    }
+  }
 
 .backdrop {
   position: fixed;
@@ -791,7 +934,7 @@ img {
 .modal {
   left: 50%;
   top: 50%;
-  padding: 40px;
+  padding: 35px;
   transform: translate(-50%, -50%) scale(1);
   transition: -webkit-transform var(--time) var(--cubic);
   transition: transform var(--time) var(--cubic);
