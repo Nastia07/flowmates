@@ -284,14 +284,6 @@ img {
 }
 
 .header__burger-menu.is-open {
-  /* display: block;
-  background-color: #f3f5f8;
-  position: fixed;
-  top: 0;
-  left: 0;
-  z-index: 100;
-  width: 100vw;
-  height: 100vh; */
   display: block;
   background-color: #ffffff;
   position: fixed;
@@ -467,7 +459,7 @@ img {
   .banner__image {
     display: none;
   }
-  .banner button {
+  .banner .link-btn {
     margin: 0 auto;
   }
   .banner__image-info {
@@ -1063,4 +1055,11 @@ img {
     width: 100vw;
     margin: 0px auto;
   }
+}
+.link-btn {
+  padding: 15px 87px;
+  font: inherit;
+  color: inherit;
+  cursor: pointer;
+  transition: all 0.3s ease;
 }
