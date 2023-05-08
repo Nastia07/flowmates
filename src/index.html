@@ -22,6 +22,7 @@
       href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200"
     />
     <link rel="stylesheet" href="./style.css" />
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
   </head>
 
   <body>
@@ -279,7 +280,7 @@
       </section>
       <section class="section container form center-text">
         <div class="form__wrapper container-dark container">
-          <form>
+          <form id="form-register">
             <h2>
               <span class="span_title">Register now,</span> number of <br />
               tickets is limited!
@@ -646,7 +647,7 @@
       <div class="modal form center-text">
         <span class="close" data-modal-close>&times;</span>
         <h2><span class="span_title">Become </span> a citizen developer</h2>
-        <form class="form__wrapper">
+        <form class="form__wrapper" id="form-citizenDev">
           <div class="form__section">
             <label class="form__label" for="first-name"
               >First Name
@@ -721,7 +722,7 @@
       <div class="modal form center-text">
         <span class="close" data-close-modal>&times;</span>
         <h2><span class="span_title">Become </span> a contributor</h2>
-        <form class="form__wrapper">
+        <form class="form__wrapper" id="form-contributor">
           <div class="form__section">
             <label class="form__label" for="first-name"
               >First Name
@@ -793,8 +794,10 @@
     </div>
 
     <script src="./menu.js"></script>
-    <script src="./slider.js"></script>
     <script src="./index.js"></script>
+    <script src="./slider.js"></script>
+    <script src="./formCitizenDev.js"></script>
+    <script src="./formContributor.js"></script>
     <script src="./modal.js"></script>
     <script src="./modaldev.js"></script>
   </body>
