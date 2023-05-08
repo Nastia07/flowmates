@@ -129,19 +129,23 @@ img {
   border: 1px solid var(--main-button-color);
   background-color: var(--main-background-color);
   border-radius: 100px;
-  color: var(--main-button-color);
-  font-weight: 700;
+  color: var(--accent-text-color);
+    font-weight: 700;
   font-size: 14px;
   line-height: 150%;
   height: 60px;
   text-transform: uppercase;
   width: 308px;
-  margin: 65px 13px 0 13px;
+  margin: 65px 0 0 0;
 }
 
 .button:hover {
   background-color: transparent;
   color: var(--accent-text-color);
+}
+
+.color_btn{
+  color: #5459ff;
 }
 
 .button-secondary {
@@ -155,6 +159,7 @@ img {
   font-size: 12px;
   height: 100%;
 }
+
 .button-secondary:hover {
   background-color: var(--main-button-color);
   color: var(--secondary-text-color);
@@ -1057,9 +1062,30 @@ img {
   }
 }
 .link-btn {
-  padding: 15px 87px;
+  width: 174px;
+  height: 46px;
   font: inherit;
-  color: inherit;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font: inherit;
   cursor: pointer;
   transition: all 0.3s ease;
 }
+
+.link-btn__header {
+  width: 174px;
+  font: inherit;
+  /* color: inherit; */
+  cursor: pointer;
+  transition: all 0.3s ease;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
