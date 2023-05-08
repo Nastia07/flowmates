@@ -504,7 +504,7 @@ img {
   background-size: contain;
   background-position: -6%;
   background-repeat: no-repeat;
-  background-image: url(/images/desktop/back3.png);
+  background-image: url(../images/desktop/back3.png);
 }
 .conference__Iframewrapper iframe {
   width: 520px;
@@ -526,7 +526,7 @@ img {
   background-size: 100%;
   background-position: 100%;
   background-repeat: no-repeat;
-  background-image: url(/images/mask.png);
+  background-image: url(../images/mask.png);
 }
 .for__list {
   display: flex;
@@ -550,7 +550,7 @@ img {
   background-color: var(--main-background-color);
   background-size: 100%;
   background-repeat: no-repeat;
-  background-image: url(/images/desktop/back1.jpeg);
+  background-image: url(../images/desktop/back1.jpeg);
 }
 .guest-back h2 {
   font-weight: 700;
@@ -562,7 +562,7 @@ img {
   background-size: contain;
   background-position: 99%;
   background-repeat: no-repeat;
-  background-image: url(/images/desktop/back2.png);
+  background-image: url(../images/desktop/back2.png);
 }
 .guest div {
   margin: 0 auto;
@@ -599,7 +599,7 @@ img {
   background-size: contain;
   /* background-position: -1%; */
   background-repeat: no-repeat;
-  background-image: url(/images/desktop/back4.png);
+  background-image: url(../images/desktop/back4.png);
 }
 .alreadyContributors div {
   margin: 0 auto;
@@ -623,7 +623,7 @@ img {
   border-radius: 0px;
 }
 .alreadyContributors__listtwo li {
-  list-style-image: url("/images/list.svg");
+  list-style-image: url("../images/list.svg");
   margin-left: 12px;
 }
 @media only screen and (max-width: 769px) {
@@ -670,7 +670,7 @@ img {
   background-size: 100%;
   background-position: 100%;
   background-repeat: no-repeat;
-  background-image: url(/images/mask.png);
+  background-image: url(../images/mask.png);
 }
 
 .becomeCDEV__list {
@@ -849,35 +849,35 @@ img {
 }
 
 .email__input {
-  background-image: url(/images/email.svg);
+  background-image: url(../images/email.svg);
   background-repeat: no-repeat;
   background-position: bottom 12px left 6px;
   background-size: 18px;
 }
 
 .user__input {
-  background-image: url(/images/user.svg);
+  background-image: url(../images/user.svg);
   background-repeat: no-repeat;
   background-position: bottom 12px left 6px;
   background-size: 18px;
 }
 
 .company__input {
-  background-image: url(/images/company.svg);
+  background-image: url(../images/company.svg);
   background-repeat: no-repeat;
   background-position: bottom 10px left 6px;
   background-size: 18px;
 }
 
 .position__input {
-  background-image: url(/images/position.svg);
+  background-image: url(../images/position.svg);
   background-repeat: no-repeat;
   background-position: bottom 12px left 6px;
   background-size: 18px;
 }
 
 .phone__input {
-  background-image: url(/images/smartphone.svg);
+  background-image: url(../images/smartphone.svg);
   background-repeat: no-repeat;
   background-position: bottom 8px left 4px;
   background-size: 23px;
@@ -996,7 +996,7 @@ img {
   background-size: 100%;
   background-position: 100%;
   background-repeat: no-repeat;
-  background-image: url(/images/mask.png);
+  background-image: url(../images/mask.png);
   margin-bottom: 30px;
   margin-top: 89px;
   padding: 100px 295px 120px 295px;
