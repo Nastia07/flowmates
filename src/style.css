@@ -879,6 +879,13 @@ img {
   background-size: 18px;
 }
 
+.phone__input {
+  background-image: url(../images/smartphone.svg);
+  background-repeat: no-repeat;
+  background-position: bottom 8px left 4px;
+  background-size: 23px;
+}
+
 .btn__modal {
   margin-top: 48px;
   padding: 10px 106px;
