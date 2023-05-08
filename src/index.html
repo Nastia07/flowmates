@@ -1,603 +1,801 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Flowmates</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.0.0/modern-normalize.min.css"
+      integrity="sha512-ISS7cAi1PEhQ8jnbJpJZMd29NlhNj4AWYyLOSp2CE/CsHxTCu+r+t0D2yoJudVrd0/8fTVPUVDzY5Tvli75u/g=="
+      crossorigin="anonymous"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;700&family=Noto+Serif+Hebrew:wght@100&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200"
+    />
+    <link rel="stylesheet" href="./style.css" />
+  </head>
 
-<head>
-  <meta charset="UTF-8" />
-  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Flowmates</title>
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.0.0/modern-normalize.min.css"
-    integrity="sha512-ISS7cAi1PEhQ8jnbJpJZMd29NlhNj4AWYyLOSp2CE/CsHxTCu+r+t0D2yoJudVrd0/8fTVPUVDzY5Tvli75u/g=="
-    crossorigin="anonymous" />
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link
-    href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;700&family=Noto+Serif+Hebrew:wght@100&display=swap"
-    rel="stylesheet" />
-  <link rel="stylesheet"
-    href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
-  <link rel="stylesheet" href="./style.css" />
-
-</head>
-
-<body>
-  <header class="header container">
-    <div class="header__logo">
-      <a href="#">
-        <img src="../images/logo.png" alt="Flowmates" />
-      </a>
-    </div>
-    <nav>
-      <ul class="header__menu list">
-        <li><a href="#">About FlowMates</a></li>
-        <li><a href="#">About conference</a></li>
-        <li><a href="#">Become a contributor</a></li>
-        <li><a href="#">Become a citizen developer</a></li>
-      </ul>
-    </nav>
-    <button class="button button-secondary">Register</button>
-    <button type="button" data-menu-open class="header__burger-icon menu-icon" aria-expanded="false">
-      &#9776;
-    </button>
-    <!-- <div class="header__burger-icon menu-icon">&#9776;</div> -->
-    <div data-menu class="header__burger-menu">
-      <div class="modal__header-wrap">
-        <div class="header__logo">
-          <a href="#">
-            <img src="../images/logo.png" alt="Flowmates" />
-          </a>
-        </div>
-        <button class="is-close" type="button" data-menu-close>
-          <img src="../images/Vector.svg" />
-        </button>
+  <body>
+    <header class="header container">
+      <div class="header__logo">
+        <a href="#">
+          <img src="../images/logo.png" alt="Flowmates" />
+        </a>
       </div>
-      <ul class="modal__menu-list">
-        <li><a class="modal__menu-list-item" href="#">About FlowMates</a></li>
-        <li><a class="modal__menu-list-item" href="#">About conference</a></li>
-        <li><a class="modal__menu-list-item" href="#">Become a contributor</a></li>
-        <li><a class="modal__menu-list-item" href="#">Become a citizen developer</a></li>
-      </ul>
-      <button class="button__modal">Register</button>
-    </div>
-  </header>
-
-  <main>
-    <section class="section container container-dark banner">
-      <div class="banner__text">
-        <h1 class="banner__text-title">
-          In <span class="colorful-text">No-Code</span> <br />We trust
-        </h1>
-        <p class="banner__text-subtitle">
-          <span class="bold">No Code, No Conference.</span> Fintech Edition by
-          FlowMates
-        </p>
-        <div class="banner__text-description">
-          <p>
-            Join the biggest
-            <span class="colorful-text">No-Code event</span> in Ukraine!
-          </p>
-          <p>
-            <span class="colorful-text">???</span> out of
-            <span class="colorful-text">???</span> places left
-          </p>
-        </div>
-        <button class="button">Register</button>
-      </div>
-      <div class="banner__image-info">
-        <div class="banner__image">
-          <img src="../images/groupdev.png" alt="Our teammates" />
-        </div>
-
-        <div class="banner__info">
-          <div class="banner__info-date">
-            <span class="material-symbols-outlined"> calendar_today </span>
-            <span>26.05</span>
+      <nav>
+        <ul class="header__menu list">
+          <li><a href="#section-AboutFlowMates">About FlowMates</a></li>
+          <li><a href="#section-AboutConference">About conference</a></li>
+          <li><a href="#BecomeContributor">Become a contributor</a></li>
+          <li><a href="#BecomeCD">Become a citizen developer</a></li>
+        </ul>
+      </nav>
+      <button class="button button-secondary">Register</button>
+      <button
+        type="button"
+        data-menu-open
+        class="header__burger-icon menu-icon"
+        aria-expanded="false"
+      >
+        &#9776;
+      </button>
+      <!-- <div class="header__burger-icon menu-icon">&#9776;</div> -->
+      <div data-menu class="header__burger-menu">
+        <div class="modal__header-wrap">
+          <div class="header__logo">
+            <a href="#">
+              <img src="../images/logo.png" alt="Flowmates" />
+            </a>
           </div>
-          <div class="banner__info-address">
-            <span class="material-symbols-outlined"> location_on </span>
-            <span>Kooperativ, 23A Sichovyh Striltsiv Street, Kyiv</span>
-          </div>
+          <button class="is-close" type="button" data-menu-close>
+            <img src="../images/Vector.svg" />
+          </button>
         </div>
-      </div>
-    </section>
-    <section class="section container whoIs">
-      <div class="whoIs__wrapper wrapper">
-        <img src="../images/desktop/conectDesktop.jpg" alt="conect" />
-
-        <div class="wrapper__text text-smoll">
-          <h2>What is <span class="span_title">FlowMates?</span></h2>
-          <span><span class="bold">Flowmates</span> -is a global community of
-            friendly and collaborative people with one common goal -
-            developing open-source technologies.</span>
-
-          <span>
-            Our <span class="bold"> core mission</span> is to create the best
-            conditions for business digitalization with the help of open
-            source low-code platform and training of citizen developers.</span>
-        </div>
-      </div>
-    </section>
-    <section class="section conference">
-      <div class="container section">
-        <h2><span class="span_title">What is</span> the conference about?</h2>
-        <div class="conference__wrapper wrapper">
-          <div class="wrapper__text text-smoll">
-            <span><span class="bold">Flowmates</span> invite all tech
-              specialists, geeks no/low-code evangelists, IT communities,
-              investors, or investment funds to take part in the forthcoming
-              event. Dedicated to the battle of approaches to the
-              implementation of projects using No-Code, the event will be
-              useful for both investors and IT innovators interested in taking
-              the maximum advantages out of the IT revolution.
-            </span>
-            <span>Ukraine bank representatives and
-              <span class="bold">No-Code </span> communities will be presented
-              at the conference where the professional speakers will discuss
-              No-Code solutions for business, successful cases, and
-              fuckups.</span>
-
-            <h5>Ticket price: $$$</h5>
-            <button class="button">Register</button>
-          </div>
-
-          <div class="conference__Iframewrapper">
-            <iframe height="315" src="https://www.youtube.com/embed/VIDEO_ID" frameborder="0"
-              allow="autoplay; encrypted-media" allowfullscreen></iframe>
-          </div>
-        </div>
-      </div>
-    </section>
-    <section class="section container container-dark for">
-      <h2><span class="span_title">Who is </span> this conference for?</h2>
-      <div>
-        <ul class="for__list list">
-          <li class="for__item">
-            <div>
-              <img src="../images/GearSix.svg" />
-              <h3>For IT people</h3>
-            </div>
-
-            <p>
-              IT people will get new No-code skills, and will be able to
-              become more valuable professionals on the market
-            </p>
+        <ul class="modal__menu-list">
+          <li>
+            <a
+              class="modal__menu-list-item"
+              href="#section-AboutFlowMates"
+              data-menu-item
+              >About FlowMates</a
+            >
           </li>
-          <li class="for__item">
-            <div>
-              <img src="../images/CurrencyCircleDollar.svg" />
-              <h3>For investors</h3>
-            </div>
-
-            <p>
-              Investors will learn insights about the No-code investment
-              opportunities in Ukraine and worldwide
-            </p>
+          <li>
+            <a
+              class="modal__menu-list-item"
+              href="#section-AboutConference"
+              data-menu-item
+              >About conference</a
+            >
           </li>
-          <li class="for__item">
-            <div>
-              <img src="../images/Briefcase.svg" />
-              <h3>For business owners</h3>
-            </div>
-
-            <p>
-              Entrepreneurs will learn how to use No-code development to
-              improve business processes and automate business processes
-            </p>
+          <li>
+            <a
+              class="modal__menu-list-item"
+              href="#BecomeContributor"
+              data-menu-item
+              >Become a contributor</a
+            >
           </li>
-          <li class="for__item">
-            <div>
-              <img src="../images/FileCode.svg" />
-              <h3>Fintech people</h3>
-            </div>
-
-            <p>
-              Fintech people will understand new trends in the No-code market
-              and how to use these technologies in your business
-            </p>
+          <li>
+            <a class="modal__menu-list-item" href="#BecomeCD" data-menu-item
+              >Become a citizen developer</a
+            >
           </li>
         </ul>
+        <button class="button__modal">Register</button>
       </div>
-    </section>
-    <section class="section guest">
-      <div class="whoIs__wrapper wrapper container">
-        <div class="whoIs__ImgWrapper guest-back">
-          <img src="../images/desktop/guestdesk.png" alt="conect" />
-          <h2>Vitor Cruz</h2>
+    </header>
+
+    <main>
+      <section class="section container container-dark banner">
+        <div class="banner__text">
+          <h1 class="banner__text-title">
+            In <span class="colorful-text">No-Code</span> <br />We trust
+          </h1>
+          <p class="banner__text-subtitle">
+            <span class="bold">No Code, No Conference.</span> Fintech Edition by
+            FlowMates
+          </p>
+          <div class="banner__text-description">
+            <p>
+              Join the biggest
+              <span class="colorful-text">No-Code event</span> in Ukraine!
+            </p>
+            <p>
+              <span class="colorful-text">???</span> out of
+              <span class="colorful-text">???</span> places left
+            </p>
+          </div>
+          <button class="button">Register</button>
         </div>
+        <div class="banner__image-info">
+          <div class="banner__image">
+            <img src="../images/groupdev.png" alt="Our teammates" />
+          </div>
+
+          <div class="banner__info">
+            <div class="banner__info-date">
+              <span class="material-symbols-outlined"> calendar_today </span>
+              <span>26.05</span>
+            </div>
+            <div class="banner__info-address">
+              <span class="material-symbols-outlined"> location_on </span>
+              <span>Kooperativ, 23A Sichovyh Striltsiv Street, Kyiv</span>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="section container whoIs" id="section-AboutFlowMates">
+        <div class="whoIs__wrapper wrapper">
+          <img src="../images/desktop/conectDesktop.jpg" alt="conect" />
+
+          <div class="wrapper__text text-smoll">
+            <h2>What is <span class="span_title">FlowMates?</span></h2>
+            <span
+              ><span class="bold">Flowmates</span> -is a global community of
+              friendly and collaborative people with one common goal -
+              developing open-source technologies.</span
+            >
+
+            <span>
+              Our <span class="bold"> core mission</span> is to create the best
+              conditions for business digitalization with the help of open
+              source low-code platform and training of citizen developers.</span
+            >
+          </div>
+        </div>
+      </section>
+      <section class="section conference" id="section-AboutConference">
+        <div class="container section">
+          <h2><span class="span_title">What is</span> the conference about?</h2>
+          <div class="conference__wrapper wrapper">
+            <div class="wrapper__text text-smoll">
+              <span
+                ><span class="bold">Flowmates</span> invite all tech
+                specialists, geeks no/low-code evangelists, IT communities,
+                investors, or investment funds to take part in the forthcoming
+                event. Dedicated to the battle of approaches to the
+                implementation of projects using No-Code, the event will be
+                useful for both investors and IT innovators interested in taking
+                the maximum advantages out of the IT revolution.
+              </span>
+              <span
+                >Ukraine bank representatives and
+                <span class="bold">No-Code </span> communities will be presented
+                at the conference where the professional speakers will discuss
+                No-Code solutions for business, successful cases, and
+                fuckups.</span
+              >
+
+              <h5>Ticket price: $$$</h5>
+              <button class="button">Register</button>
+            </div>
+
+            <div class="conference__Iframewrapper">
+              <iframe
+                height="315"
+                src="https://www.youtube.com/embed/VIDEO_ID"
+                frameborder="0"
+                allow="autoplay; encrypted-media"
+                allowfullscreen
+              ></iframe>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="section container container-dark for">
+        <h2><span class="span_title">Who is </span> this conference for?</h2>
         <div>
-          <h2>Invited <span class="span_title">guest</span></h2>
-          <div class="wrapper__text-guest text-smoll">
-            <span>
-              Senior bank manager with
-              <span class="bold">30 years of experience</span> in project
-              management, business development and design of new digital
-              product solutions.</span>
+          <ul class="for__list list">
+            <li class="for__item">
+              <div>
+                <img src="../images/GearSix.svg" />
+                <h3>For IT people</h3>
+              </div>
 
-            <span>Managed
-              <span class="bold">digital transformation in banks</span>:
-              Montepio Geral, Argentaria and BBVA in Portugal and Spain 7
-              years of international experience, constantly innovating and
-              focusing primarily on solutions with real impact on companies
-              profits.</span>
+              <p>
+                IT people will get new No-code skills, and will be able to
+                become more valuable professionals on the market
+              </p>
+            </li>
+            <li class="for__item">
+              <div>
+                <img src="../images/CurrencyCircleDollar.svg" />
+                <h3>For investors</h3>
+              </div>
 
-            <span>
-              Vitor focuses on
-              <span class="bold">long-term</span> results and
-              <span class="bold">solving strategic problems</span>.</span>
+              <p>
+                Investors will learn insights about the No-code investment
+                opportunities in Ukraine and worldwide
+              </p>
+            </li>
+            <li class="for__item">
+              <div>
+                <img src="../images/Briefcase.svg" />
+                <h3>For business owners</h3>
+              </div>
+
+              <p>
+                Entrepreneurs will learn how to use No-code development to
+                improve business processes and automate business processes
+              </p>
+            </li>
+            <li class="for__item">
+              <div>
+                <img src="../images/FileCode.svg" />
+                <h3>Fintech people</h3>
+              </div>
+
+              <p>
+                Fintech people will understand new trends in the No-code market
+                and how to use these technologies in your business
+              </p>
+            </li>
+          </ul>
+        </div>
+      </section>
+      <section class="section guest">
+        <div class="whoIs__wrapper wrapper container">
+          <div class="whoIs__ImgWrapper guest-back">
+            <img src="../images/desktop/guestdesk.png" alt="conect" />
+            <h2>Vitor Cruz</h2>
+          </div>
+          <div>
+            <h2>Invited <span class="span_title">guest</span></h2>
+            <div class="wrapper__text-guest text-smoll">
+              <span>
+                Senior bank manager with
+                <span class="bold">30 years of experience</span> in project
+                management, business development and design of new digital
+                product solutions.</span
+              >
+
+              <span
+                >Managed
+                <span class="bold">digital transformation in banks</span>:
+                Montepio Geral, Argentaria and BBVA in Portugal and Spain 7
+                years of international experience, constantly innovating and
+                focusing primarily on solutions with real impact on companies
+                profits.</span
+              >
+
+              <span>
+                Vitor focuses on
+                <span class="bold">long-term</span> results and
+                <span class="bold">solving strategic problems</span>.</span
+              >
+            </div>
           </div>
         </div>
-      </div>
-    </section>
-    <section class="section container form center-text">
-      <div class="form__wrapper container-dark container">
-        <form>
+      </section>
+      <section class="section container form center-text">
+        <div class="form__wrapper container-dark container">
+          <form>
+            <h2>
+              <span class="span_title">Register now,</span> number of <br />
+              tickets is limited!
+            </h2>
+            <div class="form__section">
+              <label class="form__label" for="first-name"
+                >First Name:
+                <input
+                  class="user__input"
+                  placeholder="John"
+                  type="text"
+                  id="first-name"
+                  name="first-name"
+                /><br />
+              </label>
+
+              <label class="form__label" for="second-name"
+                >Second Name:
+                <input
+                  class="user__input"
+                  placeholder="Smith"
+                  type="text"
+                  id="second-name"
+                  name="second-name"
+                /><br />
+              </label>
+
+              <label class="form__label" for="email"
+                >Email:
+                <input
+                  class="email__input"
+                  placeholder="Vladyslav_Gordeev@gmail.com"
+                  type="email"
+                  id="email"
+                  name="email"
+                /><br />
+              </label>
+              <label class="form__label" for="phone"
+                >Phone Number:
+                <input
+                  class="phone__input"
+                  placeholder="0123456789"
+                  id="phone"
+                  type="tel"
+                />
+              </label>
+
+              <!-- <label>Are you a:</label><br /> -->
+              <label class="form__label" for="company-rep">
+                <input
+                  type="radio"
+                  id="company-rep"
+                  name="role"
+                  value="company-rep"
+                />Company Representative </label
+              ><br />
+
+              <label class="form__label" for="it-specialist">
+                <input
+                  type="radio"
+                  id="it-specialist"
+                  name="role"
+                  value="it-specialist"
+                />
+                IT-Specialist</label
+              ><br />
+
+              <button
+                type="submit"
+                id="join-online"
+                class="button btn_form form__label"
+              >
+                Join Online
+              </button>
+              <button
+                type="submit"
+                id="join-offline"
+                class="button btn_form form__label"
+              >
+                Join Offline
+              </button>
+            </div>
+          </form>
+        </div>
+      </section>
+      <section
+        class="section container contributorCompany"
+        id="BecomeContributor"
+      >
+        <div class="container center-text gap">
           <h2>
-            <span class="span_title">Register now,</span> number of <br />
-            tickets is limited!
+            How to become <br /><span class="span_title">a contributor</span>
+            company?
           </h2>
-          <div class="form__section">
-            <label class="form__label" for="first-name">First Name:
-              <input class="user__input" placeholder="John" type="text" id="first-name" name="first-name" /><br />
-            </label>
-
-            <label class="form__label" for="second-name">Second Name:
-              <input class="user__input" placeholder="Smith" type="text" id="second-name" name="second-name" /><br />
-            </label>
-
-            <label class="form__label" for="email">Email:
-              <input class="email__input" placeholder="Vladyslav_Gordeev@gmail.com" type="email" id="email"
-                name="email" /><br />
-            </label>
-            <label class="form__label" for="phone">Phone Number:
-              <input class="phone__input" placeholder="0123456789" id="phone" type="tel">
-            </label>
-
-            <!-- <label>Are you a:</label><br /> -->
-            <label class="form__label" for="company-rep">
-              <input type="radio" id="company-rep" name="role" value="company-rep" />Company Representative
-            </label><br />
-
-            <label class="form__label" for="it-specialist">
-              <input type="radio" id="it-specialist" name="role" value="it-specialist" />
-              IT-Specialist</label><br />
-
-            <button type="submit" id="join-online" class="button btn_form form__label">
-              Join Online
-            </button>
-            <button type="submit" id="join-offline" class="button btn_form form__label">
-              Join Offline
-            </button>
+          <p class="text-smoll">
+            <span class="bold">Contributors </span> are companies that are
+            members of the FlowMates community and <br />
+            enjoy the benefits of being part of the community.
+          </p>
+          <h3>
+             Leave a request below and join the first
+            <span class="span_title">Ukrainian No-Code</span> community!
+          </h3>
+          <h3>
+            Collaborating <span class="span_title">with us</span> , you will:
+          </h3>
+          <div>
+            <ul class="list for__list wrapper">
+              <li>
+                <div>
+                  <img src="../images/lamp.svg" />
+                  <p class="text-smoll">
+                    get ready-made services <br />
+                    available on the platform
+                  </p>
+                </div>
+              </li>
+              <li>
+                <div>
+                  <img src="../images/bag.svg" />
+                  <p class="text-smoll">
+                    launch courses and increase your <br />
+                    trust in the IT market
+                  </p>
+                </div>
+              </li>
+              <li>
+                <div>
+                  <img src="../images/select.svg" />
+                  <p class="text-smoll">
+                    have an advantage in <br />
+                    hiring highly qualified <br />
+                    citizen developers
+                  </p>
+                </div>
+              </li>
+            </ul>
+            <button class="button" data-open-modal>become a contributor</button>
           </div>
+        </div>
+      </section>
+      <section class="section alreadyContributors">
+        <div class="container">
+          <h2>
+            Companies that <span class="span_title">have already</span><br />
+            <span class="span_title">become</span> contributors
+          </h2>
+          <div>
+            <ul class="list alreadyContributors__list slider">
+              <li class="alreadyContributors__list-item slide">
+                <div>
+                  <img
+                    src="../images/flowstech.png"
+                    alt="flowstech"
+                    width="240"
+                    height="39"
+                  />
+                  <h4>
+                    We provide integration between
+                    <span class="span_title"
+                      >users, customers, systems to ensure the growth of our
+                      customers business</span
+                    >
+                  </h4>
+                  <p class="text-smoll left">
+                    The company is dedicated to increasing the sales and value
+                    of companies through bespoke solutions and effective
+                    integrations
+                  </p>
+                  <ul class="alreadyContributors__listtwo text-smoll">
+                    <li>Banking</li>
+                    <li>CRM</li>
+                    <li>E-commerce</li>
+                    <li>Nelecommunications</li>
+                  </ul>
+                </div>
+              </li>
+              <li class="alreadyContributors__list-item slide">
+                <div>
+                  <img
+                    src="../images/ubos.png"
+                    alt="ubos"
+                    width="122"
+                    height="38"
+                  />
+                  <h4>
+                    Single low-code platform
+                    <span class="span_title"> to power your innovation</span>
+                  </h4>
+                  <p class="text-smoll">
+                    Platform aims to empower anyone to build applications by
+                    hiding the complexity of the software development lifecycle
+                  </p>
+                  <ul class="alreadyContributors__listtwo text-smoll">
+                    <li>UI editing</li>
+                    <li>Flow editing</li>
+                    <li>DataBase Management</li>
+                    <li>Layout Management</li>
+                  </ul>
+                </div>
+              </li>
+              <li class="alreadyContributors__list-item slide">
+                <div>
+                  <img
+                    src="../images/ukrops.png"
+                    alt="ukrops"
+                    width="125"
+                    height="39"
+                  />
+                  <h4>
+                    <span class="span_title"
+                      >Ukrainian DevOps Society (International)
+                    </span>
+                    or International DevOps Society (Ukrainian)
+                  </h4>
+                  <p class="text-smoll">
+                    DevOps Community where anyone can find answer, work or
+                    extend team easily
+                  </p>
+                  <ul class="alreadyContributors__listtwo text-smoll">
+                    <li>Friendly community</li>
+                    <li>IT info source</li>
+                    <li>Top enginers</li>
+                    <li>Main forum for discussions</li>
+                  </ul>
+                </div>
+              </li>
+              <li class="alreadyContributors__list-item slide">
+                <div>
+                  <img
+                    src="../images/qoteq.png"
+                    alt="qoteq"
+                    width="135"
+                    height="39"
+                  />
+                  <h4>
+                    The <span class="span_title">No-Code Business</span>
+                    Operating System
+                  </h4>
+                  <p class="text-smoll">
+                    The evolution of business management: one smooth ecosystem
+                    and the freedom of “сoding” with business terms, no IT
+                    developers required
+                  </p>
+                  <ul class="alreadyContributors__listtwo text-smoll">
+                    <li>Speed up business process x10</li>
+                    <li>Optimize IT/development staff costs by 50%-90%</li>
+                    <li>Simulate the results of business process changes</li>
+                  </ul>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </section>
+      <section class="section container becomeCDEV" id="BecomeCD">
+        <div class="becomeCDEV__wrapper container-dark container center-text">
+          <h2>
+            How to become
+            <span class="span_title"
+              >a citizen <br />
+              developer?</span
+            >
+          </h2>
+          <p class="becomeCDEV__subtitle">
+            <span class="bold">Citizen Developer</span>
+            - a specialist who creates IT solutions without an IT/engineering
+            education. Such specialists are switchers who were able to master
+            No-Code and become part of the IT sector.
+          </p>
+          <h4>
+            Leave a request below and join the first
+            <span class="span_title">Ukrainian No-Code</span>
+            community!
+          </h4>
+          <h4>
+            By joining as
+            <span class="span_title">a Citizen Developer</span> you:
+          </h4>
+          <div class="becomeCDEV__list-wrapper">
+            <ul class="becomeCDEV__list list">
+              <li>
+                <img src="../images/man.svg" alt="" />
+                <p>
+                  receive training and discounts on events in the FlowMates
+                  community
+                </p>
+              </li>
+              <li>
+                <img src="../images/flowrs.svg" alt="" />
+                <p>
+                  you will have a strong community in which hundreds of other
+                  specialists are striving for professional self-development
+                </p>
+              </li>
+              <li>
+                <img src="../images/groupman.svg" alt="" />
+                <p>
+                  get exclusive access to vacancies from companies contributing
+                  to the community
+                </p>
+              </li>
+            </ul>
+          </div>
+          <button type="button" class="button" data-modal-open>
+            become a citizen developer
+          </button>
+        </div>
+      </section>
+    </main>
+    <footer class="footer">
+      <div class="footer__wrapper">
+        <div class="footer__adress-wrapper">
+          <div class="footer__logo">
+            <a href="#">
+              <img src="../images/logofooter.png" alt="Flowmates" />
+            </a>
+          </div>
+
+          <ul class="list footer__adress footer-text">
+            <li>
+              <a href="tel:380961256201">+38 096 125 62 01</a>
+            </li>
+            <li>
+              <a href="mailto:c.miliutenko@flowmates.org"
+                >c.miliutenko@flowmates.org</a
+              >
+            </li>
+          </ul>
+        </div>
+        <div class="footer__nav-wrapper">
+          <nav class="footer__nav">
+            <ul class="list footer__nav footer-text">
+              <li>
+                <a href="#">About FlowMates </a>
+              </li>
+              <li><a href="#"> Become a contributor</a></li>
+              <li>
+                <a href="#">About conference</a>
+              </li>
+              <li><a href="#">Become a citizen developer</a></li>
+            </ul>
+          </nav>
+        </div>
+        <div class="footer__cocial-wrapper">
+          <h4>Follow</h4>
+          <ul class="list footer__cocial-list">
+            <li>
+              <a class="cocial-link" href="#"
+                ><img src="../images/linkedin.svg" alt="linkedin"
+              /></a>
+            </li>
+            <li>
+              <a class="cocial-link" href="#"
+                ><img src="../images/youtube.svg" alt="youtube"
+              /></a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </footer>
+
+    <div class="backdrop is-hidden" data-modal>
+      <div class="modal form center-text">
+        <span class="close" data-modal-close>&times;</span>
+        <h2><span class="span_title">Become </span> a citizen developer</h2>
+        <form class="form__wrapper">
+          <div class="form__section">
+            <label class="form__label" for="first-name"
+              >First Name
+              <input
+                class="user__input"
+                placeholder="John"
+                type="text"
+                id="first-name"
+                name="first-name"
+              /><br />
+            </label>
+
+            <label class="form__label" for="second-name"
+              >Second Name
+              <input
+                class="user__input"
+                placeholder="Smith"
+                type="text"
+                id="second-name"
+                name="second-name"
+              /><br />
+            </label>
+
+            <label class="form__label" for="email"
+              >Email
+              <input
+                class="email__input"
+                placeholder="Vladyslav_Gordeev@gmail.com"
+                type="email"
+                id="email"
+                name="email"
+              /><br />
+            </label>
+            <label class="form__label" for="phone"
+              >Phone Number
+              <input
+                class="phone__input"
+                placeholder="0123456789"
+                id="phone"
+                type="tel"
+              />
+            </label>
+
+            <label class="form__label" for="company"
+              >The company name
+              <input
+                class="company__input"
+                placeholder="PM partners"
+                type="company"
+                id="company"
+                name="company"
+              /><br />
+            </label>
+            <label class="form__label" for="position"
+              >Position in the company
+              <input
+                class="position__input"
+                placeholder="Project manager"
+                id="position"
+                type="position"
+              />
+            </label>
+          </div>
+          <button type="submit" id="join-online" class="button btn__modal">
+            Register
+          </button>
         </form>
       </div>
-    </section>
-    <section class="section container contributorCompany">
-      <div class="container center-text gap">
-        <h2>
-          How to become <br /><span class="span_title">a contributor</span>
-          company?
-        </h2>
-        <p class="text-smoll">
-          <span class="bold">Contributors </span> are companies that are
-          members of the FlowMates community and <br />
-          enjoy the benefits of being part of the community.
-        </p>
-        <h3>
-           Leave a request below and join the first
-          <span class="span_title">Ukrainian No-Code</span> community!
-        </h3>
-        <h3>
-          Collaborating <span class="span_title">with us</span> , you will:
-        </h3>
-        <div>
-          <ul class="list for__list wrapper">
-            <li>
-              <div>
-                <img src="../images/lamp.svg" />
-                <p class="text-smoll">
-                  get ready-made services <br />
-                  available on the platform
-                </p>
-              </div>
-            </li>
-            <li>
-              <div>
-                <img src="../images/bag.svg" />
-                <p class="text-smoll">
-                  launch courses and increase your <br />
-                  trust in the IT market
-                </p>
-              </div>
-            </li>
-            <li>
-              <div>
-                <img src="../images/select.svg" />
-                <p class="text-smoll">
-                  have an advantage in <br />
-                  hiring highly qualified <br />
-                  citizen developers
-                </p>
-              </div>
-            </li>
-          </ul>
-          <button class="button" data-open-modal>become a contributor</button>
-        </div>
-      </div>
-    </section>
-    <section class="section alreadyContributors">
-      <div class="container">
-        <h2>
-          Companies that <span class="span_title">have already</span><br />
-          <span class="span_title">become</span> contributors
-        </h2>
-        <div>
-          <ul class="list alreadyContributors__list slider">
-            <li class="alreadyContributors__list-item slide">
-              <div>
-                <img src="../images/flowstech.png" alt="flowstech" width="240" height="39" />
-                <h4>
-                  We provide integration between
-                  <span class="span_title">users, customers, systems to ensure the growth of our
-                    customers business</span>
-                </h4>
-                <p class="text-smoll left">
-                  The company is dedicated to increasing the sales and value
-                  of companies through bespoke solutions and effective
-                  integrations
-                </p>
-                <ul class="alreadyContributors__listtwo text-smoll">
-                  <li>Banking</li>
-                  <li>CRM</li>
-                  <li>E-commerce</li>
-                  <li>Nelecommunications</li>
-                </ul>
-              </div>
-            </li>
-            <li class="alreadyContributors__list-item slide">
-              <div>
-                <img src="../images/ubos.png" alt="ubos" width="122" height="38" />
-                <h4>
-                  Single low-code platform
-                  <span class="span_title"> to power your innovation</span>
-                </h4>
-                <p class="text-smoll">
-                  Platform aims to empower anyone to build applications by
-                  hiding the complexity of the software development lifecycle
-                </p>
-                <ul class="alreadyContributors__listtwo text-smoll">
-                  <li>UI editing</li>
-                  <li>Flow editing</li>
-                  <li>DataBase Management</li>
-                  <li>Layout Management</li>
-                </ul>
-              </div>
-            </li>
-            <li class="alreadyContributors__list-item slide">
-              <div>
-                <img src="../images/ukrops.png" alt="ukrops" width="125" height="39" />
-                <h4>
-                  <span class="span_title">Ukrainian DevOps Society (International)
-                  </span>
-                  or International DevOps Society (Ukrainian)
-                </h4>
-                <p class="text-smoll">
-                  DevOps Community where anyone can find answer, work or
-                  extend team easily
-                </p>
-                <ul class="alreadyContributors__listtwo text-smoll">
-                  <li>Friendly community</li>
-                  <li>IT info source</li>
-                  <li>Top enginers</li>
-                  <li>Main forum for discussions</li>
-                </ul>
-              </div>
-            </li>
-            <li class="alreadyContributors__list-item slide">
-              <div>
-                <img src="../images/qoteq.png" alt="qoteq" width="135" height="39" />
-                <h4>
-                  The <span class="span_title">No-Code Business</span>
-                  Operating System
-                </h4>
-                <p class="text-smoll">
-                  The evolution of business management: one smooth ecosystem
-                  and the freedom of “сoding” with business terms, no IT
-                  developers required
-                </p>
-                <ul class="alreadyContributors__listtwo text-smoll">
-                  <li>Speed up business process x10</li>
-                  <li>Optimize IT/development staff costs by 50%-90%</li>
-                  <li>Simulate the results of business process changes</li>
-                </ul>
-              </div>
-            </li>
-          </ul>
-        </div>
-      </div>
-    </section>
-    <section class="section container becomeCDEV">
-      <div class="becomeCDEV__wrapper container-dark container center-text">
-        <h2>
-          How to become
-          <span class="span_title">a citizen <br />
-            developer?</span>
-        </h2>
-        <p class="becomeCDEV__subtitle">
-          <span class="bold">Citizen Developer</span>
-          - a specialist who creates IT solutions without an IT/engineering
-          education. Such specialists are switchers who were able to master
-          No-Code and become part of the IT sector.
-        </p>
-        <h4>
-          Leave a request below and join the first
-          <span class="span_title">Ukrainian No-Code</span>
-          community!
-        </h4>
-        <h4>
-          By joining as
-          <span class="span_title">a Citizen Developer</span> you:
-        </h4>
-        <div class="becomeCDEV__list-wrapper">
-          <ul class="becomeCDEV__list list">
-            <li>
-              <img src="../images/man.svg" alt="" />
-              <p>
-                receive training and discounts on events in the FlowMates
-                community
-              </p>
-            </li>
-            <li>
-              <img src="../images/flowrs.svg" alt="" />
-              <p>
-                you will have a strong community in which hundreds of other
-                specialists are striving for professional self-development
-              </p>
-            </li>
-            <li>
-              <img src="../images/groupman.svg" alt="" />
-              <p>
-                get exclusive access to vacancies from companies contributing
-                to the community
-              </p>
-            </li>
-          </ul>
-        </div>
-        <button type="button" class="button" data-modal-open>
-          become a citizen developer
-        </button>
-      </div>
-    </section>
-  </main>
-  <footer class="footer">
-    <div class="footer__wrapper">
-      <div class="footer__adress-wrapper">
-        <div class="footer__logo">
-          <a href="#">
-            <img src="../images/logofooter.png" alt="Flowmates" />
-          </a>
-        </div>
+    </div>
 
-        <ul class="list footer__adress footer-text">
-          <li>
-            <a href="tel:380961256201">+38 096 125 62 01</a>
-          </li>
-          <li>
-            <a href="mailto:c.miliutenko@flowmates.org">c.miliutenko@flowmates.org</a>
-          </li>
-        </ul>
-      </div>
-      <div class="footer__nav-wrapper">
-        <nav class="footer__nav">
-          <ul class="list footer__nav footer-text">
-            <li>
-              <a href="#">About FlowMates </a>
-            </li>
-            <li><a href="#"> Become a contributor</a></li>
-            <li>
-              <a href="#">About conference</a>
-            </li>
-            <li><a href="#">Become a citizen developer</a></li>
-          </ul>
-        </nav>
-      </div>
-      <div class="footer__cocial-wrapper">
-        <h4>Follow</h4>
-        <ul class="list footer__cocial-list">
-          <li>
-            <a class="cocial-link" href="#"><img src="../images/linkedin.svg" alt="linkedin" /></a>
-          </li>
-          <li>
-            <a class="cocial-link" href="#"><img src="../images/youtube.svg" alt="youtube" /></a>
-          </li>
-        </ul>
+    <div class="backdrop is-hidden" modal-data>
+      <div class="modal form center-text">
+        <span class="close" data-close-modal>&times;</span>
+        <h2><span class="span_title">Become </span> a contributor</h2>
+        <form class="form__wrapper">
+          <div class="form__section">
+            <label class="form__label" for="first-name"
+              >First Name
+              <input
+                class="user__input"
+                placeholder="John"
+                type="text"
+                id="first-name"
+                name="first-name"
+              /><br />
+            </label>
+
+            <label class="form__label" for="second-name"
+              >Second Name
+              <input
+                class="user__input"
+                placeholder="Smith"
+                type="text"
+                id="second-name"
+                name="second-name"
+              /><br />
+            </label>
+
+            <label class="form__label" for="email"
+              >Email
+              <input
+                class="email__input"
+                placeholder="Vladyslav_Gordeev@gmail.com"
+                type="email"
+                id="email"
+                name="email"
+              /><br />
+            </label>
+            <label class="form__label" for="phone"
+              >Phone Number
+              <input
+                class="phone__input"
+                placeholder="0123456789"
+                id="phone"
+                type="tel"
+              />
+            </label>
+
+            <label class="form__label" for="company"
+              >The company name
+              <input
+                class="company__input"
+                placeholder="PM partners"
+                type="company"
+                id="company"
+                name="company"
+              /><br />
+            </label>
+            <label class="form__label" for="position"
+              >Position in the company
+              <input
+                class="position__input"
+                placeholder="Project manager"
+                id="position"
+                type="position"
+              />
+            </label>
+          </div>
+          <button type="submit" id="join-online" class="button btn__modal">
+            Register
+          </button>
+        </form>
       </div>
     </div>
-  </footer>
 
-
-  <div class="backdrop is-hidden" data-modal>
-    <div class="modal form center-text">
-      <span class="close" data-modal-close>&times;</span>
-      <h2><span class="span_title">Become </span> a citizen developer</h2>
-      <form class="form__wrapper">
-        <div class="form__section">
-          <label class="form__label" for="first-name">First Name
-            <input class="user__input" placeholder="John" type="text" id="first-name" name="first-name" /><br />
-          </label>
-
-          <label class="form__label" for="second-name">Second Name
-            <input class="user__input" placeholder="Smith" type="text" id="second-name" name="second-name" /><br />
-          </label>
-
-          <label class="form__label" for="email">Email
-            <input class="email__input" placeholder="Vladyslav_Gordeev@gmail.com" type="email" id="email"
-              name="email" /><br />
-          </label>
-          <label class="form__label" for="phone">Phone Number
-            <input class="phone__input" placeholder="0123456789" id="phone" type="tel">
-          </label>
-
-          <label class="form__label" for="company">The company name
-            <input class="company__input" placeholder="PM partners" type="company" id="company"
-              name="company" /><br />
-          </label>
-          <label class="form__label" for="position">Position in the company
-            <input class="position__input" placeholder="Project manager" id="position" type="position">
-          </label>
-
-        </div>
-        <button type="submit" id="join-online" class="button btn__modal">
-          Register
-        </button>
-      </form>
-    </div>
-  </div>
-
-
-  <div class="backdrop is-hidden" modal-data>
-    <div class="modal form center-text">
-      <span class="close" data-close-modal>&times;</span>
-      <h2><span class="span_title">Become </span> a contributor</h2>
-      <form class="form__wrapper">
-        <div class="form__section">
-          <label class="form__label" for="first-name">First Name
-            <input class="user__input" placeholder="John" type="text" id="first-name" name="first-name" /><br />
-          </label>
-
-          <label class="form__label" for="second-name">Second Name
-            <input class="user__input" placeholder="Smith" type="text" id="second-name" name="second-name" /><br />
-          </label>
-
-          <label class="form__label" for="email">Email
-            <input class="email__input" placeholder="Vladyslav_Gordeev@gmail.com" type="email" id="email"
-              name="email" /><br />
-          </label>
-          <label class="form__label" for="phone">Phone Number
-            <input  class="phone__input" placeholder="0123456789" id="phone" type="tel">
-          </label>
-
-          <label class="form__label" for="company">The company name
-            <input class="company__input" placeholder="PM partners" type="company" id="company"
-              name="company" /><br />
-          </label>
-          <label class="form__label" for="position">Position in the company
-            <input class="position__input" placeholder="Project manager" id="position" type="position">
-          </label>
-
-        </div>
-        <button type="submit" id="join-online" class="button btn__modal">
-          Register
-        </button>
-      </form>
-    </div>
-  </div>
-
-  <script src="./menu.js"></script>
-  <script src="./slider.js"></script>
-  <script src="./index.js"></script>
-  <script src="./modal.js"></script>
-  <script src="./modaldev.js"></script>
-
-</body>
-
+    <script src="./menu.js"></script>
+    <script src="./slider.js"></script>
+    <script src="./index.js"></script>
+    <script src="./modal.js"></script>
+    <script src="./modaldev.js"></script>
+  </body>
 </html>

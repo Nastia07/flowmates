@@ -366,7 +366,7 @@ img {
   height: calc(100vh - 90px);
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-  margin-top: 82px;
+  /* margin-top: 82px; */
   align-items: center;
 }
 
@@ -966,7 +966,6 @@ img {
     padding: 48px 5px 64px 5px;
   }
 }
-
 
 .modal-content {
   background-color: #fefefe;

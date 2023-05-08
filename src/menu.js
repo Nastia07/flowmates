@@ -3,6 +3,13 @@
   const openMenuBtn = document.querySelector("[data-menu-open]");
   const closeMenuBtn = document.querySelector("[data-menu-close]");
   const body = document.body;
+  const menuItems = document.querySelectorAll("[data-menu-item]");
+
+  menuItems.forEach((item) => {
+    item.addEventListener("click", (e) => {
+      toggleMenu(e);
+    });
+  });
 
   const toggleMenu = () => {
     const isMenuOpen =
