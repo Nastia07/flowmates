@@ -172,7 +172,7 @@ img {
 }
 @media only screen and (max-width: 768px) {
   .container {
-    max-width: 355px;
+    max-width: 390px;
     width: 100%;
     padding: 0 5px;
   }
