@@ -360,10 +360,13 @@ img {
 
 /* hero banner */
 .banner {
+  width: 100vw;
   height: calc(100vh - 90px);
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   /* margin-top: 82px; */
+  padding: 0px 30px;
+  border-radius: 0px;
   align-items: center;
 }
 
